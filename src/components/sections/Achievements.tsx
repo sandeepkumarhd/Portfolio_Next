@@ -23,7 +23,7 @@ export function Achievements() {
           return (
             <Reveal key={item.id} delay={0.08 * i}>
               <SpotlightCard className="h-full">
-                <article className={`flex h-full flex-col p-7 sm:p-8 ${isAward ? "sm:min-h-[260px]" : "sm:min-h-[240px]"}`}>
+                <article className={`flex h-full flex-col p-5 sm:p-8 ${isAward ? "sm:min-h-[260px]" : "sm:min-h-[240px]"}`}>
                   <span
                     className={`flex h-12 w-12 items-center justify-center rounded-2xl border ${
                       isAward ? "border-accent/40 bg-accent-soft text-accent" : "border-line bg-surface-2 text-fg"

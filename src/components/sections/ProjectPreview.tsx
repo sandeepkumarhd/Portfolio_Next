@@ -180,7 +180,7 @@ export function ProjectPreview({ variant, accent }: { variant: ProjectItem["prev
     <div
       aria-hidden="true"
       style={{ "--accent-local": accent } as CSSProperties}
-      className="relative h-48 overflow-hidden border-b border-line bg-gradient-to-br from-surface-2 to-surface p-5 transition-transform duration-700 ease-[var(--ease-premium)] group-hover:scale-[1.02]"
+      className="relative h-40 overflow-hidden border-b sm:h-48 border-line bg-gradient-to-br from-surface-2 to-surface p-5 transition-transform duration-700 ease-[var(--ease-premium)] group-hover:scale-[1.02]"
     >
       <div
         className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full opacity-40 blur-3xl"

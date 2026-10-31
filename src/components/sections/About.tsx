@@ -94,7 +94,7 @@ export function About() {
           </div>
           {stats.map((stat, i) => (
             <Reveal key={stat.id} delay={0.08 * i}>
-              <div className="group relative flex h-full min-h-[200px] flex-col justify-between overflow-hidden rounded-3xl border border-line bg-surface p-6 transition-all duration-500 hover:-translate-y-1 hover:border-line-strong hover:shadow-[var(--shadow)] sm:p-7">
+              <div className="group relative flex h-full min-h-[150px] flex-col justify-between overflow-hidden rounded-3xl border border-line bg-surface p-5 sm:min-h-[200px] sm:p-6 transition-all duration-500 hover:-translate-y-1 hover:border-line-strong hover:shadow-[var(--shadow)] sm:p-7">
                 <div
                   aria-hidden="true"
                   className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/10 blur-2xl transition-opacity duration-500 group-hover:opacity-100"

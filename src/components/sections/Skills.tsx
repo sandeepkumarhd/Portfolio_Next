@@ -30,7 +30,7 @@ export function Skills() {
           return (
             <Reveal key={category.id} delay={0.06 * i} className={featured ? "md:col-span-2" : undefined}>
               <SpotlightCard className="h-full">
-                <article className="flex h-full flex-col p-7 sm:p-8">
+                <article className="flex h-full flex-col p-5 sm:p-8">
                   <div className="flex items-start justify-between gap-4">
                     <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-line bg-surface-2 text-accent transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3">
                       <Icon size={22} aria-hidden="true" />

@@ -65,7 +65,7 @@ export function Contact() {
 
   return (
     <section id="contact" aria-labelledby="contact-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 pt-16 pb-14 sm:px-6 sm:pt-28 sm:pb-20 lg:pt-36">
-      <div className="relative overflow-hidden rounded-[32px] border border-line bg-surface p-7 sm:p-12 lg:p-16">
+      <div className="relative overflow-hidden rounded-[32px] border border-line bg-surface p-5 sm:p-12 lg:p-16">
         <div
           aria-hidden="true"
           className="animate-blob pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-accent/20 blur-[100px]"
@@ -153,7 +153,7 @@ export function Contact() {
                 role="status"
                 initial={reduce ? false : { opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="flex h-full min-h-[360px] flex-col items-start justify-center rounded-3xl border border-line bg-bg/50 p-8"
+                className="flex h-full min-h-[300px] sm:min-h-[360px] flex-col items-start justify-center rounded-3xl border border-line bg-bg/50 p-8"
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-accent-soft text-accent">
                   <Check size={22} aria-hidden="true" />
@@ -182,7 +182,7 @@ export function Contact() {
                 onSubmit={handleSubmit}
                 noValidate
                 aria-label="Contact form"
-                className="space-y-4 rounded-3xl border border-line bg-bg/50 p-6 sm:p-8"
+                className="space-y-4 rounded-3xl border border-line bg-bg/50 p-5 sm:p-8"
               >
                 <Field
                   id="name"
