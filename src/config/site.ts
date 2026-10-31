@@ -12,7 +12,7 @@ export const site = {
   role: "Frontend Developer",
   experienceYears: "3.5+",
   location: "India",
-  email: "hello@sandeepkumar.dev",
+  email: "Ksandeep15267@gmail.com",
   copyrightYear: "2026",
   lastUpdated: "2026-10-31",
   resumePath: "/resume.pdf",
@@ -52,7 +52,7 @@ export const heroIntro = {
 
 export const socialLinks: SocialLink[] = [
   { id: "github", label: "GitHub", href: "https://github.com/sandeepkumar" },
-  { id: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/in/sandeepkumar" },
+  { id: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/in/sandeepkumarhd" },
   { id: "email", label: "Email", href: `mailto:${site.email}` },
 ];
 
