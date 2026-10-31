@@ -64,7 +64,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" aria-labelledby="contact-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 pt-28 pb-20 sm:px-6 lg:pt-36">
+    <section id="contact" aria-labelledby="contact-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 pt-16 pb-14 sm:px-6 sm:pt-28 sm:pb-20 lg:pt-36">
       <div className="relative overflow-hidden rounded-[32px] border border-line bg-surface p-7 sm:p-12 lg:p-16">
         <div
           aria-hidden="true"

@@ -81,7 +81,7 @@ export function Projects() {
   const visible = filter === "All" ? projects : projects.filter((p) => p.category === filter);
 
   return (
-    <section id="projects" aria-labelledby="projects-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-28 sm:px-6 lg:py-36">
+    <section id="projects" aria-labelledby="projects-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-28 lg:py-36">
       <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
         <SectionHeading
           id="projects-title"
@@ -125,7 +125,7 @@ export function Projects() {
       </div>
 
       <Reveal delay={0.1}>
-        <motion.div layout className="mt-14 grid gap-6 md:grid-cols-2">
+        <motion.div layout className="mt-10 grid gap-6 sm:mt-14 md:grid-cols-2">
           <AnimatePresence mode="popLayout">
             {visible.map((project, i) => (
               // An odd last card spans both columns so the grid never ends on a lone card.

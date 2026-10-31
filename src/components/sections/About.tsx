@@ -1,5 +1,6 @@
+import Image from "next/image";
 import { Check } from "lucide-react";
-import { aboutText } from "@/config/site";
+import { aboutText, site } from "@/config/site";
 import { stats } from "@/data/portfolio";
 import { CountUp } from "@/components/effects/CountUp";
 import { Reveal } from "@/components/effects/Reveal";
@@ -23,7 +24,7 @@ function StatValue({ stat }: { stat: StatItem }) {
 
 export function About() {
   return (
-    <section id="about" aria-labelledby="about-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-28 sm:px-6 lg:py-36">
+    <section id="about" aria-labelledby="about-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-28 lg:py-36">
       <div className="grid gap-16 lg:grid-cols-[1fr_1fr] lg:gap-20">
         <div>
           <SectionHeading
@@ -57,6 +58,40 @@ export function About() {
         </div>
 
         <div className="grid grid-cols-2 gap-4 self-start">
+          <div className="col-span-2 grid grid-cols-2 gap-4">
+            <Reveal>
+              <figure className="group relative h-full overflow-hidden rounded-3xl border border-line bg-surface">
+                <Image
+                  src="/images/sandeep-portrait.jpg"
+                  alt="Sandeep Kumar, Frontend Developer, smiling in a park"
+                  width={1280}
+                  height={1280}
+                  sizes="(min-width: 1024px) 250px, 45vw"
+                  className="aspect-[3/4] w-full object-cover object-[center_28%] transition-transform duration-700 ease-[var(--ease-premium)] group-hover:scale-[1.03]"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-4 pb-4 pt-12">
+                  <p className="text-sm font-semibold text-white">{site.name}</p>
+                  <p className="text-xs text-white/75">{site.role}</p>
+                </figcaption>
+              </figure>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <figure className="group relative h-full overflow-hidden rounded-3xl border border-line bg-surface">
+                <Image
+                  src="/images/sandeep-at-work.jpg"
+                  alt="Sandeep Kumar working on a laptop while sitting on a bed"
+                  width={1536}
+                  height={1536}
+                  sizes="(min-width: 1024px) 250px, 45vw"
+                  className="aspect-[3/4] w-full object-cover object-[center_40%] transition-transform duration-700 ease-[var(--ease-premium)] group-hover:scale-[1.03]"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-4 pb-4 pt-12">
+                  <p className="text-sm font-semibold text-white">At work</p>
+                  <p className="text-xs text-white/75">Frontend development</p>
+                </figcaption>
+              </figure>
+            </Reveal>
+          </div>
           {stats.map((stat, i) => (
             <Reveal key={stat.id} delay={0.08 * i}>
               <div className="group relative flex h-full min-h-[200px] flex-col justify-between overflow-hidden rounded-3xl border border-line bg-surface p-6 transition-all duration-500 hover:-translate-y-1 hover:border-line-strong hover:shadow-[var(--shadow)] sm:p-7">

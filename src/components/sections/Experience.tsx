@@ -19,7 +19,7 @@ export function Experience() {
     <section
       id="experience"
       aria-labelledby="experience-title"
-      className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-28 sm:px-6 lg:py-36"
+      className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-28 lg:py-36"
     >
       <SectionHeading
         id="experience-title"
@@ -28,7 +28,7 @@ export function Experience() {
         description="Enterprise portals, workflow systems and dashboards, delivered alongside backend and DevOps teams."
       />
 
-      <div ref={ref} className="relative mt-16 space-y-12 pl-8 sm:pl-12">
+      <div ref={ref} className="relative mt-10 space-y-8 pl-8 sm:mt-16 sm:space-y-12 sm:pl-12">
         {/* Track and filled spine */}
         <div aria-hidden="true" className="absolute left-[7px] top-2 bottom-2 w-px bg-line-strong sm:left-[11px]">
           <motion.div
