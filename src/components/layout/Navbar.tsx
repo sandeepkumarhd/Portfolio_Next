@@ -57,12 +57,14 @@ export function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-[var(--ease-premium)] ${
-        scrolled ? "py-3" : "py-5"
+        scrolled ? "py-2.5" : "py-2.5 sm:py-5"
       }`}
     >
       <div
-        className={`mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full px-4 py-2.5 transition-all duration-500 ease-[var(--ease-premium)] sm:px-5 ${
-          scrolled ? "glass border border-line shadow-[var(--shadow)]" : "border border-transparent"
+        className={`mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full px-3 py-2 transition-all duration-500 ease-[var(--ease-premium)] sm:px-5 sm:py-2.5 ${
+          scrolled
+            ? "glass border border-line shadow-[var(--shadow)]"
+            : "border border-transparent max-md:border-line max-md:bg-[var(--glass)] max-md:backdrop-blur-xl"
         } mx-4 sm:mx-6 lg:mx-auto`}
       >
         <a

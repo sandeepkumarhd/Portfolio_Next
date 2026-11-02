@@ -18,7 +18,7 @@ export function Hero() {
     <section
       id="home"
       aria-labelledby="hero-title"
-      className="relative isolate flex min-h-svh items-center overflow-hidden pt-28 pb-16 sm:pt-32"
+      className="relative isolate flex min-h-svh items-center overflow-hidden pt-24 pb-14 sm:pt-32 sm:pb-16"
     >
       {/* Animated backdrop: drifting accent glows over a faint grid */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
