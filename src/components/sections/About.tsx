@@ -24,7 +24,7 @@ function StatValue({ stat }: { stat: StatItem }) {
 
 export function About() {
   return (
-    <section id="about" aria-labelledby="about-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-28 lg:py-36">
+    <section id="about" aria-labelledby="about-title" className="relative mx-auto max-w-6xl scroll-mt-24 section-shell px-5 py-16 sm:px-6 sm:py-20 lg:py-20">
       <div className="grid gap-16 lg:grid-cols-[1fr_1fr] lg:gap-20">
         <div>
           <SectionHeading

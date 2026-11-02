@@ -81,7 +81,7 @@ export function Projects() {
   const visible = filter === "All" ? projects : projects.filter((p) => p.category === filter);
 
   return (
-    <section id="projects" aria-labelledby="projects-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-28 lg:py-36">
+    <section id="projects" aria-labelledby="projects-title" className="relative mx-auto max-w-6xl scroll-mt-24 section-shell px-5 py-16 sm:px-6 sm:py-20 lg:py-20">
       <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
         <SectionHeading
           id="projects-title"
@@ -125,14 +125,14 @@ export function Projects() {
       </div>
 
       <Reveal delay={0.1}>
-        <motion.div layout className="mt-10 grid gap-6 sm:mt-14 md:grid-cols-2">
+        <motion.div layout className="mt-8 grid gap-5 sm:mt-12 sm:gap-6 md:grid-cols-2">
           <AnimatePresence mode="popLayout">
             {visible.map((project, i) => (
-              // An odd last card spans both columns so the grid never ends on a lone card.
+              // With an odd count, the first card is the wide feature and the rest form a balanced grid.
               <ProjectCard
                 key={project.id}
                 project={project}
-                wide={i === visible.length - 1 && visible.length % 2 === 1}
+                wide={i === 0 && visible.length % 2 === 1}
               />
             ))}
           </AnimatePresence>

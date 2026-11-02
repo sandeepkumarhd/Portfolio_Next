@@ -13,7 +13,7 @@ const kindIcon: Record<AchievementItem["kind"], LucideIcon> = {
 
 export function Achievements() {
   return (
-    <section id="achievements" aria-labelledby="achievements-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-28 lg:py-36">
+    <section id="achievements" aria-labelledby="achievements-title" className="relative mx-auto max-w-6xl scroll-mt-24 section-shell px-5 py-16 sm:px-6 sm:py-20 lg:py-20">
       <SectionHeading id="achievements-title" eyebrow="Achievements" title="Recognition and measurable impact." />
 
       <div className="mt-10 grid gap-5 sm:mt-16 md:grid-cols-3">

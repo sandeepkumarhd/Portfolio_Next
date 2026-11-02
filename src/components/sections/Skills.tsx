@@ -15,7 +15,7 @@ const icons: Record<string, LucideIcon> = {
 
 export function Skills() {
   return (
-    <section id="skills" aria-labelledby="skills-title" className="relative mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-28 lg:py-36">
+    <section id="skills" aria-labelledby="skills-title" className="relative mx-auto max-w-6xl scroll-mt-24 section-shell px-5 py-16 sm:px-6 sm:py-20 lg:py-20">
       <SectionHeading
         id="skills-title"
         eyebrow="Technical Skills"
@@ -23,7 +23,7 @@ export function Skills() {
         description="A toolkit shaped by enterprise work: strongly typed React, predictable state, accessible UI systems and secure integrations."
       />
 
-      <div className="mt-10 grid gap-5 sm:mt-16 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid gap-5 sm:mt-12 md:grid-cols-2 lg:grid-cols-3">
         {skillCategories.map((category, i) => {
           const Icon = icons[category.id] ?? Code2;
           const featured = i === 0;
